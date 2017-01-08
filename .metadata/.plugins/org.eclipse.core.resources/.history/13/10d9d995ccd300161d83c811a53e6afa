@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+public class MultiDimensionalArray {
+
+	public static void main(String[] args) {
+		// multi-dimensional array
+		int firstArray[][] = { { 8, 9, 10, 12 }, { 12, 13, 14, 15 } };
+		// has 3 rows {every bracket is a row}
+		// the first brackets is [0][x]
+		int secondArray[][] = { { 30, 31, 32, 33 }, { 43 }, { 4, 5, 6 } };
+
+		System.out.println(secondArray[0][3]);
+
+		// Returns reference location [[I@15db9742, [I@6d06d69c]
+		// System.out.println(Arrays.toString(firstArray));
+	}
+
+	public static void accessElement(int[] array, int row, int column) {
+		System.out.println(Arrays.toString(array[row][column]));
+	}
+}

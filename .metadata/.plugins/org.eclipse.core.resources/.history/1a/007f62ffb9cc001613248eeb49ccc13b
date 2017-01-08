@@ -1,0 +1,38 @@
+
+public class Factorial {
+
+	public static void main(String[] args) {
+	System.out.println(myExp(3,3));
+	
+	}
+
+	
+	public static double myExp(double x, int n) {
+		double ansX = x;
+		double ans = 0;
+		
+		int i = 2;
+		
+		while (i <= n) {
+			ansX = ansX * x;
+			ans = ans + ansX / fact(i);
+			i = i++;
+		}
+		
+		return (1 + x + ans);
+	}
+	
+	
+	//i counts down starting from (x-1) 
+	public static double fact(int x) {
+		double ans = x;
+		int i = x - 1;
+		while (i >= 0) {
+			ans = ans * i;
+			i = i - 1;
+		}
+		return ans;
+		
+	}
+
+}

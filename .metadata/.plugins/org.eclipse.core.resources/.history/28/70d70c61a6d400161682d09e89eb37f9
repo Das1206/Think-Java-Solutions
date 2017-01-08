@@ -1,0 +1,31 @@
+package StringTraversal;
+
+public class charAT {
+
+	public static void main(String[] args) {
+		String name = "Quan Minh Truong Minh ";
+		
+		//p: select letter M using charAt function
+		char letter = name.charAt(6);
+		
+		System.out.println(letter);
+		
+		selectChar(name, 5);
+
+	}
+	
+	/**
+	 * Selects a character from an array and prints it
+	 * @param string Pull a character from this array
+	 * @param n The number of the index
+	 * @return char value. Returns a character from the string
+	 */
+	public static char selectChar(String string, int n) {
+		
+		char letter = string.charAt(n);
+		
+		System.out.println(letter);
+		return letter;
+	}
+
+}

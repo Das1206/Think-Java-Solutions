@@ -1,0 +1,41 @@
+package Exercises;
+
+/**
+ * Exercise 8-4 of Think Java. 
+ * 
+ * 
+ * 
+ * The book asks if indexOfMax can be written with an enchanced for loop. The answer is no, because an enchanced for loop
+ * will not allow you to return a value. It will only allow looping through something, but not returning a value.
+ * @author Quan Truong
+ *
+ */
+
+public class indexOfMax84 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a = {2,3,4,5,6,7,8,9};
+		
+		System.out.println(indexOfMax(a));
+		
+	}
+	
+	/**
+	 * Returns the highest value in an array.
+	 * @param a The array to be searched for highest value.
+	 * @return The highest value in an array.
+	 */
+	public static int indexOfMax(int[] a) {
+		
+		int maxValue = a[0];
+		
+		for (int i : a) {
+			if (a[i] > maxValue)
+				maxValue = a[i];
+		
+		}
+		return maxValue;
+	}
+
+}

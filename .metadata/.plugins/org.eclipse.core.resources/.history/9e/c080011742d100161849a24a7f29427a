@@ -1,0 +1,36 @@
+package Exercises;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class powerArray {
+
+	public static void main(String[] args) {
+		
+		double[] newArray = randomArray(99);
+
+		
+		System.out.println(Arrays.toString(powArray(newArray, 2)));
+
+	}
+
+	public static double[] powArray(double[] a, int power) {
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = Math.pow(a[i], power);
+			
+		}
+		return a;
+	}
+	
+	public static double[] randomArray(int size) {
+		Random random = new Random();
+		double[] a = new double[size];
+		for (int i = 0; i < a.length; i++) {
+			a[i] = random.nextInt(100);
+		}
+		System.out.println("a[2] = " + a[2]);
+		return a;
+	}
+
+}

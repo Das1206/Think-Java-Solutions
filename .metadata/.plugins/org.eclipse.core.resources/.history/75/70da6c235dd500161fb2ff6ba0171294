@@ -1,0 +1,20 @@
+package Exercises;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Boolean\tChar\tInt\tdouble\tString");
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+	}
+
+}

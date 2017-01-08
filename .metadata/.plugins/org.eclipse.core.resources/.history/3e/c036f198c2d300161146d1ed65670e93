@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class apples {
+
+	public static void main(String[] args) {
+		String name;
+		Scanner in = new Scanner(System.in);
+		tuna tunaObject = new tuna();
+		//ask for the name
+		System.out.println("Enter the name of your first girlfriend:");
+		name = in.nextLine();
+		tunaObject.setName(name);
+		tunaObject.saying();
+		
+	}
+
+}

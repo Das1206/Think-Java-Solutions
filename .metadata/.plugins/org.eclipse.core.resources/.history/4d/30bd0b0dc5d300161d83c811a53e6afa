@@ -1,0 +1,28 @@
+
+
+
+public class tuna {
+	
+	/**
+	 * private means that only the methods inside this class can use it
+	 */
+	private String girlName;
+	
+	public void setName(String name) {
+	girlName = name;
+	}
+	
+	public String getName() { 
+		return girlName;
+	}
+	
+	public void saying() {
+		System.out.println("Your first girlfriend was: " + getName());
+	}
+	
+	public void simpleMessage(String name) {
+		System.out.println("hello " + name);
+	}
+	
+
+}

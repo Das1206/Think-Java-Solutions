@@ -1,0 +1,26 @@
+package Exercises;
+
+public class Test {
+
+	public static void main(String[] args) {
+		boolean falsy = false;
+		boolean truesy = true;
+		char letter = 'a';
+		
+		System.out.println("\tBoolean\tchar\tint\tdouble\tString");
+		System.out.println("Boolean\nchar\nint\ndouble\nString");
+		//boolean
+		System.out.println((false)+"\t"+(letter+falsy));
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+	}
+
+}

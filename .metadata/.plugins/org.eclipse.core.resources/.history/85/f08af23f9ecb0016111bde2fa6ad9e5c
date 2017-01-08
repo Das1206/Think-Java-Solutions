@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/**
+ * Enter an odd number, then display all odd numbers from 1 through n. 
+ * @author Quan Truong
+ *
+ */
+public class SixDashSeven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(oddSum(2));
+	}
+/**
+ * 
+ * @param n user input number.
+ * @return An integer value named oddSum. 
+ */
+	public static int oddSum(int n) {
+		int oddSum = 0, oddNumber;
+		
+		// Ask for user's input
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter an odd number: ");
+		n = in.nextInt();
+
+		/*Find out if the number is odd, and if it is print out all the odd numbers up until that number
+		and add the values to oddSum
+		*/
+		if (n % 2 != 0) {
+			System.out.println("It's odd.");
+			for (int i = 1; i <= n; i += 2) {
+				oddSum += i;
+				System.out.println(i);
+			}
+		}
+		System.out.println("The sum of all numbers is " + oddSum);
+		return oddSum;
+	}
+
+}

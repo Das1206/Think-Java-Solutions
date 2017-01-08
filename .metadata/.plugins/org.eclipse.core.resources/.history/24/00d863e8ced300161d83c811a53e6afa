@@ -1,0 +1,29 @@
+
+public class TableforMultiArrays {
+
+	public static void main(String[] args) {
+		// multi-dimensional array
+		int firstArray[][] = { { 8, 9, 10, 12 }, { 12, 13, 14, 15 } };
+		// has 3 rows {every bracket is a row}
+		// the first brackets is [0][x]
+		int secondArray[][] = { { 30, 31, 32, 33 }, { 43 }, { 4, 5, 6 } };
+
+		System.out.println("This is the first array: ");
+		display(firstArray);
+	}
+
+	public static void display(int x[][]) {
+
+		// loop through the rows
+		for (int row = 0; row < x.length; row++) {
+			// then loop through the columns
+			for (int column = 0; column < x[row].length; column++) {
+				// row starts at 0, then loops through columns.. once all
+				// columns are looped, then row gets
+				// incremented by 1 and columns get looped through again
+				System.out.print(x[row][column] + "\t");
+			}
+			System.out.println();
+		}
+	}
+}

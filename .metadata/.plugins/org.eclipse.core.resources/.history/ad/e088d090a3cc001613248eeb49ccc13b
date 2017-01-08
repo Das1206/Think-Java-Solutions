@@ -1,0 +1,28 @@
+package Exercises;
+
+public class sqRt {
+
+	public static void main(String[] args) {
+		sqrt(9);
+	
+	}
+	/**
+	 * 
+	 * @param numberToSquare Square root numberToSquareumber to be founumberToSquared
+	 * @param a InumberToSquareitial guess
+	 */
+	public static void sqrt(double numberToSquare) {
+		
+		//inumberToSquareitial guess = a
+		double a = numberToSquare/2;
+		double x1 = (a + numberToSquare/a)/2;
+		double x2 = (x1 + numberToSquare/x1)/2;
+		while ( Math.abs(x1 - x2) >= 0.0001) {
+			x1 = (x2 + numberToSquare/x2)/2;
+			x2 = (x1 + numberToSquare/x1)/2;
+		}
+		System.out.println(x2);
+		System.out.println(x1);
+	}
+
+}

@@ -1,0 +1,48 @@
+package StringTraversal;
+
+public class subString {
+
+	public static void main(String[] args) {
+		String name = "Quan Minh Truong Minh ";
+		
+		//p: Extract from Q to T from String name
+		
+		//begins at Q == 0.. can insert name.indexOf("Q") or 0 insidesubstring()
+		 name = name.substring(0);
+		 
+		 //ends at "T"
+		 name = name.substring(0, name.indexOf("T") +1);
+		 
+		 //print the result
+		 System.out.println("searched name: " + name);
+	
+		 String name1= "Hello world";
+		 
+		extract4rmString(name1, "H", ("d"));
+		 
+	
+
+	}
+	
+	
+	/**
+	 * Extracts a part of a string.
+	 * Usage: For the ending letter, insert the letter before the one you want it to end at.
+	 * 
+	 * @param string
+	 * 				The string to be extracted from.
+	 * @param begin
+	 * 				The beginning of what is to be extracted
+	 * @param end
+	 * 				The ending of what is to be extracted. Insert the letter before the one where you want it to end at
+	 */
+	public static String extract4rmString(String string, String n, String o) {
+		String result;
+		
+		result = string.substring(string.indexOf(n), string.indexOf(o) + 1);
+				
+		System.out.println(result);
+		return result;
+	}
+
+}

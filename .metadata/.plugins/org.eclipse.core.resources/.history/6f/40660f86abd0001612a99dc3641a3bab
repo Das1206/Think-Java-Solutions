@@ -1,0 +1,23 @@
+package Traversals;
+
+public class Reduction {
+
+	public static void main(String[] args) {
+		
+		double[] a = {3,2,4,5};
+		
+		search(a, 3);
+
+	}
+	
+	public static int search(double[]a, double target) {
+		for (int i=0; i< a.length; i++) {
+			if (i == target) {
+				System.out.println(i);
+				return i;
+			}
+		}
+		return -1;
+	}
+
+}

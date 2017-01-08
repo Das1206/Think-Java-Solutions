@@ -1,0 +1,10 @@
+package Exercises;
+
+public class areFactors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

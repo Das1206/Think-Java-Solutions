@@ -1,0 +1,33 @@
+package StringTraversal;
+
+public class subString {
+
+	public static void main(String[] args) {
+		String name = "Quan Minh Truong Minh ";
+		
+		//p: Extract from Q to T from String name
+		
+		//begins at Q == 0.. can insert name.indexOf("Q") or 0 insidesubstring()
+		 name = name.substring(0);
+		 
+		 //ends at "T"
+		 name = name.substring(0, name.indexOf("T") +1);
+		 
+		 //print the result
+		 System.out.println("searched name: " + name);
+	
+		 String name1= "Hello world";
+		 
+		 int index = name1.indexOf('o', 5);
+		 System.out.println(index);
+		 
+		StringTraversal.extract4rmString(name1, "H", ("d"));
+		 
+	
+
+	}
+	
+	
+	
+
+}

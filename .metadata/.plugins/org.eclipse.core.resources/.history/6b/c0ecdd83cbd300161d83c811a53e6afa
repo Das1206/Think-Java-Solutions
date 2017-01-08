@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class MultiDimensionalArray {
+
+	public static void main(String[] args) {
+		//multi-dimensional array
+		int firstArray[][]={{8,9,10,12},{12,13,14,15}};
+							//has 3 rows {every bracket is a row}
+		int secondArray[][] = {{30,31,32,33},{43},{4,5,6}};
+		
+		System.out.println(secondArray[2][0]);
+		
+		
+		//Returns reference location [[I@15db9742, [I@6d06d69c]
+//		System.out.println(Arrays.toString(firstArray));
+	}
+
+}

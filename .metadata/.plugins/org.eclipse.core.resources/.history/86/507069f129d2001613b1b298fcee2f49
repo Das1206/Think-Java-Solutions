@@ -1,0 +1,84 @@
+package Exercises;
+
+import java.util.Arrays;
+/**
+ * Sieve of Eratosthenes' Algorithm explained: https://www.khanacademy.org/computing/computer-science/cryptography/comp-number-theory/v/sieve-of-eratosthenes-prime-adventure-part-4
+ * 
+ * eve of Eratosthenes' Java: https://www.youtube.com/watch?v=n6Jk1yGsml8
+ */
+import java.util.Scanner;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+public class sieveEratosthenes85 {
+
+	public static void main(String[] args) {
+		/*
+		 * // Ask for N int N; Scanner sc = new Scanner(System.in);
+		 * System.out.println("Enter a prime ceiling: "); N = sc.nextInt();
+		 * 
+		 * // initialize boolean array full of TRUE values boolean[] isPrime =
+		 * new boolean[N]; isPrime[0] = false; for (int c = 1; c < N; c++) {
+		 * isPrime[c] = true; }
+		 * 
+		 * // check every number greater than 2 for primality // i is really the
+		 * value 1.. for (int i = 2; i <= N; i++) {
+		 * 
+		 * // isPrime[2-1] is actually isPrime[1] which is the value 2..BITVH if
+		 * (isPrime[i - 1]) { System.out.println(i);
+		 * 
+		 * // cross off all subsequent multiples of i for (int j = 2 * i; j <=
+		 * N; j += i) { isPrime[j - 1] = false; System.out.println(isPrime[j -
+		 * 1]); } }
+		 * 
+		 * }
+		 */
+
+		sieve(25);
+
+	}
+
+	public static boolean[] sieve(int N) {
+
+
+		// initialize boolean array full of TRUE values
+		boolean[] isPrime = new boolean[N];
+		isPrime[0] = false;
+		for (int c = 1; c < N; c++) {
+			isPrime[c] = true;
+		}
+
+		// check every number greater than 2 for primality
+		// i is really the value 1..
+		for (int i = 2; i <= N; i++) {
+
+			// isPrime[2-1] is actually isPrime[1] which is the value 2..BITVH
+			if (isPrime[i - 1]) {
+				// System.out.println(i);
+
+				// cross off all subsequent multiples of i
+				for (int j = 2 * i; j <= N; j += i) {
+					isPrime[j - 1] = false;
+					// System.out.println(i + " is false");
+				}
+			}
+		}
+
+		// print every variable inside sieve
+		for (int z = 0; z < N; z++) {
+			if (isPrime[z]) {
+				System.out.println("isPrime[" + z + "] which is" + (z+1) " is true");
+			} else {
+				System.out.println("isPrime[" + z + "] is false");
+			}
+		}
+		return isPrime;
+	}
+}
+
+/*
+ * public static boolean[] sieve(int n) {
+ * 
+ * 
+ * }
+ */

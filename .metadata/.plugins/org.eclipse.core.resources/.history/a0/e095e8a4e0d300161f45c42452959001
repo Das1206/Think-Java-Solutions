@@ -1,0 +1,39 @@
+
+public class TableForMultiArray {
+
+	public static void main(String[] args) {
+		int[][] firstArray = {{2,4,6,8},{5,6,7,8,9,},{8,9,10,11,12,13,14}};
+		int[][] secondArray = {{14,16,18,20,22,24},{40,42,44,46,48},{80,83,84,86,88}};
+		int[][] thirdArray = {{14,16,18,20,22,24},{40,42,44,46,48},{80,83,84,86,88}, {4, 6,8,12,15,766,42,91,901},{43,65,24,92,04,51}};
+		
+		//display the elements of firstArray & secondArray
+		display(firstArray);
+//		display(secondArray);
+	
+
+		//Print the 0th row, 4th element of thirdArray
+//		System.out.println(returnElement(thirdArray, 0,4));
+	}
+	
+	public static int returnElement(int[][] array, int row, int col) {
+		return array[row][col];
+	}
+	
+	public static void display(int[][] x) {
+		System.err.print("{");
+		for (int row = 0; row<x.length; row++) {
+			
+			System.out.print("{");
+			
+			for (int col = 0; col < x[row].length; col++) {
+				if ( row == (x.length - 1) && (col == (x[row].length)) ) {
+					System.out.println(x[row][col]);
+				} else {
+				System.out.print(x[row][col] + ", ");
+				}
+			}
+			System.out.print("}");
+		}
+		System.out.println("}");
+	}
+}

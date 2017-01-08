@@ -1,0 +1,18 @@
+package StringTraversal;
+
+public class reverseString {
+
+	public static void main(String[] args) {
+
+		String name1 = "name2";
+		String name2 = "name1";
+		
+		int diff = name1.compareTo(name2);
+		
+		System.out.println(diff);
+
+	}
+	
+	
+
+}

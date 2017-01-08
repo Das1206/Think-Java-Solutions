@@ -1,0 +1,31 @@
+package Exercises;
+
+public class Test {
+
+	public static void main(String[] args) {
+		boolean falsy = false;
+		boolean truesy = true;
+		char x = 'x';
+		
+	System.out.println(5 + "");
+		
+		double number = 1.0;
+		String name = "asdda";
+		System.out.println(number + name);
+		System.out.println("\tBoolean\tchar\tint\tdouble\tString");
+		System.out.println("Boolean\t"+(false)+"\t"+(falsy)+"\t"+(falsy)+"\t"+(name+falsy));
+		//boolean
+		System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package Exercises;
+
+import java.util.Scanner;
+
+public class sieveEratosthenes85 {
+
+	public static void main(String[] args) {
+		// Ask for N
+		int N;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a prime ceiling: " );
+		N = sc.nextInt();
+		
+		//initialize boolean array full of true values
+		boolean[] isPrime = new boolean[N];
+		isPrime[0] = false;
+		for (int c = 1; c < N; c++) {
+			isPrime[c] = true;
+		}
+
+		System.out.println(isPrime[2]);
+		
+	}
+	
+	/*public static boolean[] sieve(int n) {
+		
+		
+}*/

@@ -1,0 +1,19 @@
+package StringTraversal;
+
+public class reverseString {
+
+	public static void main(String[] args) {
+
+		String name1 = "name0";
+		String name2 = "name1";
+		
+		//if name1 comes first alphabetically, returns -1. if comes second, returns 1.
+		int diff = name1.compareTo(name2);
+		
+		System.out.println(diff);
+
+	}
+	
+	
+
+}

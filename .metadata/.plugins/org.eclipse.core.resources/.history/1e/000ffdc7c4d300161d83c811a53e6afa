@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+/**
+ * Using many methods and instances.. TheNewBoston #16 Java Programming Tutorial
+ * https://www.youtube.com/watch?v=9t78g0U8VyQ&index=16&list=PLFE2CE09D83EE3E28
+ * @author Quan Truong
+ *
+ */
+public class apples {
+
+	public static void main(String[] args) {
+		String name;
+		Scanner in = new Scanner(System.in);
+		tuna tunaObject = new tuna();
+		//ask for the name
+		System.out.println("Enter the name of your first girlfriend:");
+		name = in.nextLine();
+		tunaObject.setName(name);
+		tunaObject.saying();
+		
+	}
+
+}

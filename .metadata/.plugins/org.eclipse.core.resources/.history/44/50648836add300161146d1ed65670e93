@@ -1,0 +1,11 @@
+
+public class tuna {
+/**
+ * Use method from this in another by typing "useMethodFromHere.simpleMessage" 
+ */
+	public void simpleMessage(String name) {
+		System.out.println("hello " + name);
+	}
+	
+
+}

@@ -1,0 +1,71 @@
+package Tests;
+
+import java.util.Arrays;
+import java.util.Random;
+/**
+ * Just created this to test my knowledge.. Testing random numbers again and inRange method.
+ * @author Quan Truong
+ * Jan 5, 2017 3:30:30 AM
+ */
+
+public class inRangeTest {
+
+	public static void main(String[] args) {
+		//Create the random array
+		int[] array = randomArray(26);
+		
+		System.out.println(Arrays.toString(inRangeEfficient(array)));
+	}
+	
+	public static int[] randomArray(int size) {
+		//create an array specified to size
+		int[] a = new int[size];
+		
+		//assign random numbers to elements in the above array
+		Random random = new Random();
+		for (int i=0; i<size; i++) {
+			//100 is inclusive
+			a[i] = random.nextInt(100);
+		}
+		//return the array, that is now filled with random numbers
+		return a;
+	}
+	
+	/**
+	 * Returns the amount of times an element falls in between low and high in an array.
+	 * @param arr The array to be searched.
+	 * @param low Lowest point to be searched, this number will be included.
+	 * @param high Highest point to be searched, this number will be included.
+	 * @return The amount of times an element between low and high shows up in arr[].
+	 */
+	
+	public static int inRange(int[] arr, int low, int high) {
+		int count = 0;
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] >= low && arr[i] <= high) {
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	public static int[] inRangeEfficient(int[] scores) {
+		
+		int[] counts = new int[100];
+		
+		
+		for (int i = 0; i < scores.length; i++) {
+			int index = scores[i];
+			counts[index]++;
+			
+			//counts[3] is equal to the actual value of 3
+			System.out.println("scores[" + i + "] is equal to " + scores[i] + 
+					"\n counts[" + index + "] is equal to " + counts[index]);
+		}
+		
+		return counts;
+		
+	}
+
+}

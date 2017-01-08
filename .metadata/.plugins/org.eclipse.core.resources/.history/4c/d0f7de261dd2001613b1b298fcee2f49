@@ -1,0 +1,43 @@
+package Exercises;
+
+import java.util.Scanner;
+
+public class sieveEratosthenes85 {
+
+	public static void main(String[] args) {
+		// Ask for N
+		int N;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a prime ceiling: " );
+		N = sc.nextInt();
+		
+		//initialize boolean array full of true values
+		boolean[] isPrime = new boolean[N];
+		isPrime[0] = false;
+		for (int c = 1; c < N; c++) {
+			isPrime[c] = true;
+		}
+
+		//check every number greater than 2 for primality
+		for (int i = 1; i <= N; i++) {
+			
+			if (isPrime[i]) {
+				System.out.println(i);
+				
+				//cross off all subsequent multiples of i
+				for (int j = 2 * i; j <= N; j+=i) {
+					isPrime[j-1] = false;
+				}
+			}
+			
+		}
+		
+		
+	}
+	
+}
+	
+	/*public static boolean[] sieve(int n) {
+		
+		
+}*/

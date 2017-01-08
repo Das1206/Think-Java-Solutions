@@ -1,0 +1,12 @@
+package Exercises;
+
+public class arePrimeFactors {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	
+
+}

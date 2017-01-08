@@ -1,0 +1,13 @@
+package Exercises;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String name = "qwjeqiwe";
+		char letter = 'a'; 
+		
+		System.out.println(letter +name);
+
+	}
+
+}
