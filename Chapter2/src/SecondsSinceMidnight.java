@@ -23,6 +23,8 @@ public class SecondsSinceMidnight {
 		timePassedSinceMidnight = ( (hour * 60) * 60 ) + (minute * 60) + second; 
 		System.out.println(timePassedSinceMidnight);
 		
+		
+		
 	}
 
 }

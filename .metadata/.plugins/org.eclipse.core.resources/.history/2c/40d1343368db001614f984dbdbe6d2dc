@@ -1,0 +1,32 @@
+/**
+ * Exercise 2-3.3 of Think Java, 2016.
+ * 
+ * 3. Make the program calculate and display the number of seconds since midnight.
+ * 
+ *
+ * @author Quan Truong
+ *
+ */
+
+
+public class RemainingSecondsInDay {
+//Really happy with this one..
+	
+	public static void main(String[] args) {
+			int hour, minute, second;
+			hour = 12;
+			
+			if (hour > 12) {
+				hour = hour -12;
+			}
+			
+			minute = 0;
+			second = 0;
+			int tilMidnight = (24 * 60 * 60);
+			int fromMidnight = ( (hour * 60) * 60 ) + (minute * 60) + second; 
+			System.out.println(tilMidnight - fromMidnight);
+			
+		}
+
+}
+
