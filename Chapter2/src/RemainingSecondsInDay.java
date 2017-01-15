@@ -1,7 +1,7 @@
 /**
  * Exercise 2-3.3 of Think Java, 2016.
  * 
- * 3. Make the program calculate and display the number of seconds since midnight.
+ * 4. Make the program calculate and display the number of seconds since midnight.
  * 
  *
  * @author Quan Truong
@@ -14,8 +14,8 @@ public class RemainingSecondsInDay {
 	public static void main(String[] args) {
 			int hour, minute, second, to24Hour;
 			hour = 14;
-			minute = 34;
-			second = 50;
+			minute = 0;
+			second = 0;
 			
 			//Part 2 asks to convert 24 hours time (indicated by 14 above which means 2 pm) to 12 hour time. 
 			//This can be accomplished using a modulo, which divides by 12 and returns the remainder. 14 % 12 = 2, hence the result is 2 (PM)
