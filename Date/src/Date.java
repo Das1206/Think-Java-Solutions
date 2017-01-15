@@ -1,6 +1,15 @@
+/**
+ * Exercise 2-2 of the book Think Java, paperback, 2016 version.
+ * @author Quan Truong
+ *
+ */
 
-public class main {
 
+
+public class Date {
+
+	
+	
 	public static void main(String[] args) {
 		String day = "Thursday";
 		String month = "July";
