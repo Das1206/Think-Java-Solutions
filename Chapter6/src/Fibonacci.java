@@ -1,7 +1,7 @@
 public class Fibonacci {
 
 	public static void main(String[] args) {
-		System.out.println(fibonacci(-3));
+		System.out.println(fibonacci(3));
 	}
 
 	public static int fibonacci(int n) {

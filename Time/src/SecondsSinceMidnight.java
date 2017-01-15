@@ -6,7 +6,7 @@ public class SecondsSinceMidnight {
 		hour = 14;
 		minute = 30;
 		second = 45;
-		int midnight = ( (hour * 60) * 60 ) + (minute * 60) + 45; 
+		int midnight = ( (hour * 60) * 60 ) + (minute * 60) + second; 
 		System.out.println(midnight);
 		
 	}

@@ -23,7 +23,6 @@ public class HasNext {
 
 		   // close the scanner
 		   scanner.close();
-		   //Testing using method from another Class
-		   ScanDouble.printLogarithm(500);
+		   
 		   }
 }
