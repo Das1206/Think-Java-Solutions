@@ -22,9 +22,6 @@ public class SecondsSinceMidnight {
 		//converts the total amount of time passed to seconds
 		timePassedSinceMidnight = ( (hour * 60) * 60 ) + (minute * 60) + second; 
 		System.out.println(timePassedSinceMidnight);
-		
-		
-		
 	}
 
 }
