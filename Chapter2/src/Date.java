@@ -4,12 +4,7 @@
  *
  */
 
-
-
 public class Date {
-
-	
-	
 	public static void main(String[] args) {
 		String day = "Thursday";
 		String month = "July";
