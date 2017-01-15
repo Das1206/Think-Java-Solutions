@@ -13,7 +13,7 @@ public class isPalindrome {
 
 		System.out.println(guess.length - 1);
 
-		System.out.println(isPalindrome(guess));
+		System.out.println(isPal(guess));
 
 	}
 
@@ -47,7 +47,7 @@ public class isPalindrome {
 	 * @param s
 	 * @return
 	 */
-	public static boolean isPalindrome(char[] s) {
+	public static boolean isPal(char[] s) {
 		// counter that moves upwards
 		int up = 0;
 		// counter that moves downwards
