@@ -11,7 +11,7 @@ public class ScannerBug {
 		
 		//Uppercase all letters after any whitespace
 		for (int i = 1; i < array.length; i++) {
-			if (Character.isWhitespace(array[i -	 1])) {
+			if (Character.isWhitespace(array[i -1 ])) {
 				array[i] = Character.toUpperCase(array[i]);
 			}
 		}

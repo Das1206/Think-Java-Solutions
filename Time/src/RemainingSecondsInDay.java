@@ -1,6 +1,5 @@
 
 public class RemainingSecondsInDay {
-//Really happy with this one..
 	public static void main(String[] args) {
 			double hour, minute, second;
 			hour = 12;
