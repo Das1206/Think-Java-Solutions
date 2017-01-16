@@ -17,11 +17,11 @@ public class AmericanAndEuropeanTime {
 		int date = 16;
 		int year = 2016;
 		
-		//Print the date in American format
+		//Manually print the date in American format
 		System.out.println("American Format:");
 		System.out.println(day +"," + month + " " + date + ", " + year);
 		
-		//Print the date in European format
+		//Manually print the date in European format
 		System.out.println("Tomorrow's date in EU format:");
 		System.out.println(day + " " + (++date) + " " + month + " " + year);
 	}
