@@ -1,9 +1,15 @@
+/**
+ * Exercise 3-4 of Think Java, 2016.
+ * Modified the program to be recursive. Also, I removed the print computer value line (that was present in GuessNumberGame1) so it's more difficult. Left in the "You were off by..." line, though! 
+ */
+
 import java.util.*;
 
 public class GuessNumberGameRecursion {
 
 	public static void main(String[] args) {
 		int computerValue, userValue;
+
 		// Generate computer value
 		Random r = new Random();
 		computerValue = r.nextInt(100) + 1;
@@ -15,31 +21,29 @@ public class GuessNumberGameRecursion {
 		userValue = in.nextInt();
 
 		// Display user's guess, computer's guess, and the difference
-		System.out.println("My guess was: " + computerValue);
+		
 		System.out.println("Your guess is: " + userValue);
-		System.out.println("You were off by "
-				+ Math.abs(userValue - computerValue));
+		System.out.println("You were off by " + Math.abs(userValue - computerValue));
 
 		// Check difference
 		equality(userValue, computerValue);
 	}
-	
-	//Changed parameters of equality method in order to fix problem 1
 
 	public static void equality(int param1, int param2) {
 		Scanner in = new Scanner(System.in);
 		while (param1 != param2) {
-		 if (param1 < param2) {
-				System.out.println("Too low! Enter new value: " );
+			if (param1 < param2) {
+				System.out.println("Too low! Enter another number: ");
 				param1 = in.nextInt();
 			} else if (param1 > param2) {
-				System.out.println("Too high! Enter new value: ");
+				System.out.println("Too high! Enter another number: ");
 				param1 = in.nextInt();
 			} 
+		
 		}
-		if (param1 == param2){
-				System.out.println("You got it right.");
+		
+		if (param1 == param2) {
+				System.out.println("You got it right! Give yourself a pat on the back!");
 		}
 	}
-
 }
