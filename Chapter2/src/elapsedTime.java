@@ -12,7 +12,7 @@ import java.util.*;
 public class elapsedTime {
 
 	public static void main(String[] args) {
-		int hour, minute, second, to24Hour;
+		int hour, minute, second;
 		
 		//The time you started working on this project on.
 		hour = 15;
