@@ -1,5 +1,5 @@
 /**
- * Exercise 2-2 #2 of the book Think Java, 2016 version.
+ * Exercise 2-2 #4 & 5 of the book Think Java, 2016 version.
  * 
  * Print the time in American and European format. 
  * 
