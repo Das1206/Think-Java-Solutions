@@ -28,23 +28,23 @@ public class GuessNumberGameRecursion {
 		System.out.println("You were off by " + Math.abs(userValue - computerValue));
 
 		// Check difference
-		equality(userValue, computerValue);
+		isEqual(userValue, computerValue);
 	}
 
-	public static void equality(int param1, int param2) {
+	public static void isEqual(int userValue, int computerValue) {
 		Scanner in = new Scanner(System.in);
-		while (param1 != param2) {
-			if (param1 < param2) {
+		while (userValue != computerValue) {
+			if (userValue < computerValue) {
 				System.out.println("Too low! Enter another number: ");
-				param1 = in.nextInt();
-			} else if (param1 > param2) {
+				userValue = in.nextInt();
+			} else if (userValue > computerValue) {
 				System.out.println("Too high! Enter another number: ");
-				param1 = in.nextInt();
+				userValue = in.nextInt();
 			} 
 		
 		}
 		
-		if (param1 == param2) {
+		if (userValue == computerValue) {
 				System.out.println("You got it right! Give yourself a pat on the back!");
 		}
 	}
