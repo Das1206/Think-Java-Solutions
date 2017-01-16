@@ -4,7 +4,16 @@
  *
  */
 
+<<<<<<< HEAD:Chapter2/src/Date.java
 public class Date {
+=======
+
+
+public class Date {
+
+	
+	
+>>>>>>> 56f74f9d04b7a4e667509b81ca057a776acfbac1:Chapter2/src/Date.java
 	public static void main(String[] args) {
 		String day = "Thursday";
 		String month = "July";

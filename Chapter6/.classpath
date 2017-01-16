@@ -3,8 +3,12 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-8-openjdk-amd64"/>
 >>>>>>> temp
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-8-openjdk-amd64"/>
+>>>>>>> 56f74f9d04b7a4e667509b81ca057a776acfbac1
 	<classpathentry kind="output" path="bin"/>
 </classpath>

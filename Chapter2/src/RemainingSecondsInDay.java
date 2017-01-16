@@ -17,8 +17,13 @@ public class RemainingSecondsInDay {
 			minute = 0;
 			second = 0;
 			
-			//Part 2 asks to convert 24 hours time (indicated by 14 above which means 2 pm) to 12 hour time. 
-			//This can be accomplished using a modulo, which divides by 12 and returns the remainder. 14 % 12 = 2, hence the result is 2 (PM)
+			/*
+			 * You can ignore this part. It is not used to get the remaining seconds in a day. It's simply part 2 of the question.
+			 * 
+			 * Part 2 of this question wants us to convert 24 hours time (indicated by 14 above which means 2 pm) to 12 hour time. 
+			 * 
+			 *This can be accomplished using a modulo, which divides by 12 and returns the remainder. 14 % 12 = 2, hence the result is 2 (PM)
+			 */
 			to24Hour = hour % 12;
 			
 			System.out.println("14 % 12 = " + to24Hour + ". This represents 2 P.M.");
