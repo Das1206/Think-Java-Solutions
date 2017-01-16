@@ -1,11 +1,14 @@
 /**
- * Exercise 2-2 of the book Think Java, paperback, 2016 version.
+ * Exercise 2-2 #2 of the book Think Java, 2016 version.
+ * 
+ * Print the time in American and European format. 
+ * 
  * @author Quan Truong
  *
  */
 
 
-public class Date {
+public class AmericanAndEuropeanTime {
 
 	
 	public static void main(String[] args) {
