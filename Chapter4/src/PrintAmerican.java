@@ -8,6 +8,7 @@
  * @author Quan Truong
  *
  */
+
 public class PrintAmerican {
 	
 	/**
