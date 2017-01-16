@@ -19,16 +19,22 @@ public class GuessNumberGame1 {
 		
 		
 		//Ask for user input
-		System.out.println("I am thinking of a number between 1-100. Enter your guess: ");
+		System.out.println("I am thinking of a number between 1-100. Can you guess what it is? ");
+		System.out.println("Type a number: ");
 		userGuess = in.nextInt();
 
+		//Print User guess
+		System.out.println("Your guess is: " + userGuess);
+		//Print computer's value
+		System.out.println("The number I was thinking of is:  " + computerValue);
+		
 		//If the user's guess doesn't equal the computer value, print the difference and tell the user his luck ran short
 		if (userGuess != computerValue) {
 			difference = Math.abs(userGuess - computerValue);
-			System.out.println("Your guess was wrong by " + difference + ".");
-			userGuess = in.nextInt();
+			System.out.println("You were off by: " + difference + ".");
 		} else if (userGuess == computerValue) {
 			System.out.println("Your guess was correct");
+			
 		}
 		
 	}
