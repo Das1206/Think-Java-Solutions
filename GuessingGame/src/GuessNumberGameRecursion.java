@@ -1,6 +1,8 @@
 /**
  * Exercise 3-4 of Think Java, 2016.
- * Modified the program to be recursive. Also, I removed the print computer value line (that was present in GuessNumberGame1) so it's more difficult. Left in the "You were off by..." line, though! 
+ * A recursive Guess The Number Game. 
+ * Feel free to make improvements!
+ * @author Quan Truong
  */
 
 import java.util.*;
