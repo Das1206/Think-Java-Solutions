@@ -1,16 +1,18 @@
 package Exercises;
 /**
- * Exercise 7-5 of think Java, page 101-102.
+ * Exercise 7-5 of Think Java, 2016.
+ * 
  * Infinite series expansion problem.
  * 
- * The book begins using factorial as the denominator of the terms, but it is changed to (denom*i)
- * in the loop because it is not as memory intensive as calling the factorial method.
+ * DENOM: The book begins using factorial as the denominator of the terms, but it is changed to (denom*i)
+ * which accomplishes the same thing. AFAIK, it's also less memory intensive.
  * 
- * Also, the use of Math.pow is eliminated and instead x is multiplied with itself (using ansX as x)
- * in order to make the equation more efficient.
+ * Math.pow: The use of Math.pow is replaced by x multiplied by itself (using ansX as x), 
+ * which accomplishes the same thing.
+ *
  * 
- * Also, the first two terms of the equation added together is simply (1 + x/1). 
- * I have added this to the variable ans. This is why the loop begins at 2 (i.e. why i is set to 2).
+ * First 2 terms of equation: The first two terms of the equation added together is simply (1 + x/1), 
+ * which can be simplified to (1 + x). This is why the loop begins at 2, i.e. int i is initialized at 2.
  * 
  * @author Quan Truong
  *
@@ -18,10 +20,19 @@ package Exercises;
 public class Factorial {
 
 	public static void main(String[] args) {
-		System.out.println(gauss(3,2));
 		
-		System.out.println("Gauss(3,7) equals " + gauss(3,7) + " but does it equal " + (1 - (3*3) + (-1*(387420489/153400)))      );
+		/*System.out.println(gaussian(3,2));
+		
+		System.out.println("Gauss(3,7) equals " + gaussian(3,7) + " but does it equal " + (1 - (3*3) + (-1*(387420489/153400)))      );
 
+		System.out.println(myexp(3,4));*/
+		
+		check(1.0);
+		
+		//check myexp with values: -0.1, -1.0, -10.0, -100.0
+		for (double i = -1.0; i >= -100.0; i = i * 10.0) {
+			System.out.println(myexp(i, 4));
+		}
 	}
 
 	/**
@@ -36,13 +47,13 @@ public class Factorial {
 		System.out.println("No. of terms to be added in the " + "series e ^ " + x + ": " + accuracy);
 		// declarations for the loop
 		double ansX = x;
-		double ans = (1 + x);
-		int i = 2;
+		double ans = (1 + x); //accounts for first 2 terms
+		int i = 2; //since we skipped first 2 terms we start at 2nd index
 		double denom = 1;
 		while (i <= accuracy) {
 			ansX = ansX * x;
-			denom = denom * i;
-			ans = ans + ansX / denom;
+			denom = denom * i; //starts at 2.. as this increases it will match factorial of n
+			ans = ans + ansX / denom; 
 			i = i + 1;
 		}
 		return ans;
@@ -56,8 +67,8 @@ public class Factorial {
 	 * @param x Double value. The exponent of Euler's number to be checked.
 	 */
 	public static void check(double x) {
-		int accuracy = 90;
-		System.out.println(x + "\t" + Math.exp(x) + "\t" + myexp(x,accuracy));
+		int accuracy = 4;
+		System.out.println(x + "\t" + myexp(x,accuracy) + Math.exp(x) + "\t");
 	}
 
 	
@@ -81,7 +92,7 @@ public class Factorial {
 	 * @param accuracy Amount of accuracy
 	 * @return double value.
 	 */
-	public static double gauss(double x, int accuracy) {
+	public static double gaussian(double x, int accuracy) {
 		
 			System.out.println("No. of terms to be added in the " + "series e ^ " + x + ": " + accuracy);
 			// declarations for the loop
