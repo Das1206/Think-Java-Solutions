@@ -7,6 +7,16 @@ ehthumbs.db
 .project
 .settings/
 
+#Ignore .class
+.class
+
+#ignore .metadata
+.metadata
+
+
+
+
+
 # Folder config file
 Desktop.ini
 
@@ -51,7 +61,3 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#Ignore .project, .classpath, and .settings
-.project
-.classpath
-.settings/
