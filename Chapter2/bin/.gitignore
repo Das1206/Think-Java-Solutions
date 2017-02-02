@@ -1,4 +1,6 @@
-/Date.class
+/AmericanAndEuropeanTime.class
 /RemainingSecondsInDay.class
 /SecondsSinceMidnight.class
-/AmericanAndEuropeanTime.class
+/Time.class
+/elapsedTime.class
+/percentageOfDayPassed.class
