@@ -3,9 +3,6 @@ Thumbs.db
 ehthumbs.db
 
 #Eclipse
-.classpath
-.project
-.settings/
 
 #Ignore .class
 .class
