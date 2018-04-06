@@ -9,12 +9,20 @@ import java.util.*;
 
 public class GuessNumberGameRecursion {
 
-	public static void main(String[] args) {
-		int computerValue, userValue;
+	// Generate computer value
+	public static Random r = new Random();
+	public static final int MAX_GUESS = r.nextInt(100) + 1;
 
-		// Generate computer value
-		Random r = new Random();
-		computerValue = r.nextInt(100) + 1;
+
+	//create a class constant for 100 in computerValue variable
+
+
+
+
+	public static void main(String[] args) {
+		int userValue;
+
+
 
 		// Ask for user input
 		Scanner in = new Scanner(System.in);
@@ -25,26 +33,26 @@ public class GuessNumberGameRecursion {
 		// Display user's guess, computer's guess, and the difference
 		
 		System.out.println("Your guess is: " + userValue);
-		System.out.println("You were off by " + Math.abs(userValue - computerValue));
+		System.out.println("You were off by " + Math.abs(userValue - MAX_GUESS));
 
 		// Check difference
-		isEqual(userValue, computerValue);
+		isEqual(userValue, MAX_GUESS);
 	}
 
-	public static void isEqual(int userValue, int computerValue) {
+	public static void isEqual(int userValue, int MAX_GUESS) {
 		Scanner in = new Scanner(System.in);
-		while (userValue != computerValue) {
-			if (userValue < computerValue) {
+		while (userValue != MAX_GUESS) {
+			if (userValue < MAX_GUESS) {
 				System.out.println("Too low! Enter another number: ");
 				userValue = in.nextInt();
-			} else if (userValue > computerValue) {
+			} else if (userValue > MAX_GUESS) {
 				System.out.println("Too high! Enter another number: ");
 				userValue = in.nextInt();
 			} 
 		
 		}
 		
-		if (userValue == computerValue) {
+		if (userValue == MAX_GUESS) {
 				System.out.println("You got it right! Give yourself a pat on the back!");
 		}
 	}

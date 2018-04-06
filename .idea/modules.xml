@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chapter7/7_Loops.iml" filepath="$PROJECT_DIR$/Chapter7/7_Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/8_Arrays.iml" filepath="$PROJECT_DIR$/Array/8_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9_Strings_And_Things/9_Strings_And_Things.iml" filepath="$PROJECT_DIR$/9_Strings_And_Things/9_Strings_And_Things.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlexLi/AlexLi.iml" filepath="$PROJECT_DIR$/AlexLi/AlexLi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Branching Statements/Branching Statements.iml" filepath="$PROJECT_DIR$/Branching Statements/Branching Statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter2/Chapter2.iml" filepath="$PROJECT_DIR$/Chapter2/Chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter4/Chapter4.iml" filepath="$PROJECT_DIR$/Chapter4/Chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter6/Chapter6.iml" filepath="$PROJECT_DIR$/Chapter6/Chapter6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Convert/Convert.iml" filepath="$PROJECT_DIR$/Convert/Convert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Date/Date.iml" filepath="$PROJECT_DIR$/Date/Date.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/src/Exercises/Exercises.iml" filepath="$PROJECT_DIR$/Array/src/Exercises/Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuessingGame/GuessingGame.iml" filepath="$PROJECT_DIR$/GuessingGame/GuessingGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewBoston/NewBoston.iml" filepath="$PROJECT_DIR$/NewBoston/NewBoston.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PercentageDay/PercentageDay.iml" filepath="$PROJECT_DIR$/PercentageDay/PercentageDay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scanner/Scanner.iml" filepath="$PROJECT_DIR$/Scanner/Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Think-Java-Solutions.iml" filepath="$PROJECT_DIR$/Think-Java-Solutions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Time/Time.iml" filepath="$PROJECT_DIR$/Time/Time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
